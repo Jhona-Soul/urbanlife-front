@@ -1,12 +1,13 @@
 import Footer from "./components/Footer/Footer";
-function App() {
-  
+import Detalle from "./components/Detalle/Detalle";
 
+function App() {
   return (
     <>
-      <Footer/>
+      <Detalle />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

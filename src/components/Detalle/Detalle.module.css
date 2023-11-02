@@ -1,0 +1,83 @@
+.detalles {
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.info {
+  width: 30%;
+  padding: 5rem;
+}
+
+.imagenVista {
+  width: 600px;
+  height: 600px;
+}
+
+.imagenDetalle {
+  width: 60px;
+  height: 60px;
+}
+
+.color {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+  font-size: 15px;
+}
+
+.talla {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flecha {
+  font-size: 25px;
+}
+
+.boton {
+  text-align: center;
+  padding: 2rem;
+}
+
+.botonCarrito {
+  border-radius: 50px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  background-color: #105a33;
+  color: white;
+  border: none;
+}
+
+.botonCarrito:hover {
+  background-color: #105a33b8;
+}
+
+.envio {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
