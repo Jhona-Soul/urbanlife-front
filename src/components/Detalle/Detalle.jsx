@@ -1,19 +1,20 @@
 import Descripcion from "../descripcion/Descripcion";
 // import detalleStyle from "./Detalle.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Carousel } from "@material-tailwind/react";
+import buzo from "../../images/Detalle_producto/buzo.jpg";
+import buzo3 from "../../images/Detalle_producto/buzo3.jpg";
 
 export default function Detalle() {
   return (
     <>
-      <section className="flex gap-40 m-10 justify-center mr-40">
-        <div>
-          <img
-            className=""
-            src="/src/images/Detalle_producto/buzo.jpg"
-            alt="buzo"
-          />
-        </div>
-        <div className="mt-10 w-1/4">
+      <section className="flex gap-32 m-10 justify-center mr-40">
+        <Carousel className="rounded-xl w-2/4">
+          <img src={buzo} alt="image 1" />
+          <img src={buzo3} alt="image 2" />
+        </Carousel>
+
+        <div className="mt-10 w-2/4">
           <p className="text-xl w-4/5">
             Sweater de hombre en mezcla de alpaca con detalles de la marca y
             cocodrilo a contraste
@@ -25,7 +26,7 @@ export default function Detalle() {
           <div className="my-9 flex items-center gap-10 px-4">
             <img
               className="w-16"
-              src="/src/images/Detalle_producto/color.avif"
+              src="/src/images/Detalle_producto/color.jpg"
               alt="buzo"
             />
             <p>Color Seleccionado</p>
