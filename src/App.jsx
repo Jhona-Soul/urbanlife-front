@@ -1,12 +1,20 @@
+//Dependencias
+import { Routes, Route } from 'react-router-dom';
+//Components
+import { Layout } from './components/Layout';
 import Footer from "./components/Footer/Footer";
 import Detalle from "./components/Detalle/Detalle";
+
 
 function App() {
   return (
     <>
-      <Detalle />
+      <Routes>
+        <Route path='/' element={<Layout/>} >
+          <Route path="detalle" element={<Detalle/>} />
 
-      <Footer />
+        </Route>
+      </Routes>
     </>
   );
 }

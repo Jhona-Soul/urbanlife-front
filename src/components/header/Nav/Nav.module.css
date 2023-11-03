@@ -1,0 +1,29 @@
+.navlogo {
+    position: fixed;
+    top: var(--top-banner-height);
+    left: 0;
+    width: 100vw;
+    z-index: 150;
+    background-color: #fff;
+    transition: background-color .4s ease-in-out;
+    border: 1px solid tomato;
+}
+.navsearch {
+    margin-right: 30px;
+    border: 1px solid green;
+    flex-basis: 100%;
+    width: 100%;
+}
+.navsearchbox {
+    transition: background-color .4s ease;
+}
+
+.navinput {
+    min-height: 39px;
+    background-color: #f4f4f4;
+    padding: 0 25px 0 45px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 20px;
+    font-size: 16px;
+    transition: border-color .4s ease-in-out,background-color .4s ease-in-out;
+}
