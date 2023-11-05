@@ -1,0 +1,41 @@
+.navbar {
+    z-index: 125;
+    left: 0;
+    width: 100vw;
+    color: #292929;
+    background-color: #fff;
+    top: calc(var(--header-height) - 15px + var(--top-banner-height));
+    transition: all .4s ease-in-out;
+    will-change: transform;
+    overflow: hidden;
+}
+.navbarli {
+    margin-right: 5px;
+}
+@media only screen and (min-width: 1191px){
+    .headermenucategory {
+        padding: 14px;
+        margin: 0.1rem;
+    }
+}
+.headermenu {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #292929;
+    margin-right: 10px;
+    
+}
+.headertext {
+    margin-right: 10px;
+}
+.headertext::after, .headertext::before {
+    content: attr(data-text)/"";
+}
+.headertext::after {
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        user-select: none;
+        pointer-events: none;
+        font-weight: 600;
+}

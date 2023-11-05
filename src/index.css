@@ -5,6 +5,7 @@
 :root {
     --header-height: 75px;
 }
+
 div {
     margin: 0;
     padding: 0;
@@ -12,6 +13,42 @@ div {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
+}
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+svg, use {
+    pointer-events: none;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+}
+.cleanTextIcon {
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: 3.9rem;
+}
+.icon-svg {
+    width: 1em;
+    height: 1em;
 }
 
 .padding-1 {
@@ -24,8 +61,10 @@ div {
 }
 .iconSearch {
     z-index: 1;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     width: 1em;
     height: 1em;
+    left: 14px;
+    top: 13px;
 }

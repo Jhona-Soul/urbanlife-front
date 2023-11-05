@@ -2,8 +2,11 @@
 import { Link } from "react-router-dom"
 //Components
 import { NavLink } from "./NavLink";
+import { ArrowTop } from "../../Iconos/IconNav";
+import MenuItem from "./MenuItem";
 //Styles
 import Style from "./NavBar.module.css";
+
 
 export const NavBar = () => {
     const opciones = [
@@ -30,25 +33,17 @@ export const NavBar = () => {
     ]
     return (
         <>
-            <nav className={Style.navbar}>
-                <div id="title">
-                    <Link className={Style.logo} to="/" > 
-                        <h1 className={Style.titleh1}>Antonativa</h1>
-                        <h1 className={Style.titlesub}><b>Balanza</b></h1>
-                    </Link>
-                </div>
-                <ul className={Style.lista}>
-                    {
-                        opciones.map(({id, href, text}) => {
-                            return (
-                                <li key={id}>
-                                    <NavLink to={href}>{text}</NavLink>
-                                </li>
-                            )
-                        })
-                    }
-                    
+            <nav className={Style.navbar + " fixed"}>
+                <ul className=" flex justify-center">
+                    <MenuItem to={"Novedades"}/>
+                    <MenuItem to={"Hombre"}/>
+                    <MenuItem to={"Mujer"}/>
+                    <MenuItem to={"Niñoz"}/>
+                    <MenuItem to={"Polos"}/>
+                    <MenuItem to={"Snikers"}/>
+                    <MenuItem to={"We are UrbanLife"}/>
                 </ul>
+
             </nav>
         </>
     )
