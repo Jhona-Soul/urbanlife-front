@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-.footer{
-    background-color:rgb(246, 246, 246) !important;
-    font-family: 'Roboto', sans-serif;
-    position: fixed;
-    bottom: 0;
-=======
 .footer {
   background-color: rgb(246, 246, 246) !important;
   font-family: "Roboto", sans-serif;
->>>>>>> c5220a5f4cb476849558fc918f33d24cfc6b71f2
 }
 .footer ul {
   list-style-type: none;
