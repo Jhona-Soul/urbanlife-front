@@ -14,7 +14,9 @@ function App() {
           <Route path="detalle" element={<Detalle/>} />
 
         </Route>
+        
       </Routes>
+      <Footer/>
     </>
   );
 }
