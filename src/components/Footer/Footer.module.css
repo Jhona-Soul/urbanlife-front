@@ -1,6 +1,8 @@
 .footer{
     background-color:rgb(246, 246, 246) !important;
     font-family: 'Roboto', sans-serif;
+    position: fixed;
+    bottom: 0;
 }
 .footer ul{
     list-style-type: none;
