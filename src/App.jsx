@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import Footer from "./components/Footer/Footer";
 import Detalle from "./components/Detalle/Detalle";
+import Card from "./components/ProductCard/Card";
 
 
 function App() {
