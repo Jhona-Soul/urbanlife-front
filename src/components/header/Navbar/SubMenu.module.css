@@ -1,0 +1,16 @@
+.lcolumgapcall {
+    column-gap: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+}
+
+
+@media only screen and (min-width: 1191px)
+{
+    .headersubmenucontent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+.SubItem {
+    align-items: flex-start;
+}

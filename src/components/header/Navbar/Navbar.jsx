@@ -23,7 +23,6 @@ export const NavBar = () => {
                 </ul>
                 <ul>
                     <SubMenu />
-                    <h2>Hola soy un texto</h2>
                 </ul>
             </nav>
         </>
