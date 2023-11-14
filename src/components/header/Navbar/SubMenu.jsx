@@ -1,9 +1,9 @@
 import React from 'react'
-import { ArrowLeft, ArrowRigth } from '../../Iconos/IconNav'
+import { ArrowLeft, ArrowRigth,CleanText } from '../../Iconos/IconNav'
 import ItemSubMenu from './ItemSubMenu'
 import Style from "./SubMenu.module.css"
 
-export default function SubMenu() {
+export default function SubMenu({heigtvar}) {
     const categorias = [
         {
             Indumentaria:[
@@ -50,12 +50,15 @@ export default function SubMenu() {
         }
 
     ]
+    const styleconst = {
+        opacity: 1,
+        height: heigtvar,
+        zIndex: 2, 
+    }
   return (
     <>
-        <li className={` ${Style.SubItem}  `}>
-            <button>
-
-            </button>
+        <li className={` ${Style.SubItem}  `} style={styleconst}>
+            <button className={Style.cleanText + " "}><CleanText/></button>
             <div className={''}>
                 <div className={+ ' '}>
                     <button>

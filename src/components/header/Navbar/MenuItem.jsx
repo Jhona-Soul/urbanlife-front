@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 //Dependencies
 import { ArrowTop, ArrowBotton } from "../../Iconos/IconNav";
 //Styles
 import Style from "./NavBar.module.css";
-
+import { NavbarContext } from '../../../context/navbarContext';
 
 export default function MenuItem({ to }) {
-  const [openLink, setOpenLink ]= useState(false);
+  //const [openLink, setOpenLink ]= useState(false);
+  const {openLink, setOpenLink} = useContext(NavbarContext)
 
   const openMenu = () => {
     setOpenLink(!openLink);

@@ -13,4 +13,12 @@
 }
 .SubItem {
     align-items: flex-start;
+    padding-left: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    padding-right: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    
+}
+.cleanText {
+    font-size: 4rem;
+    margin:0.1rem;
+    
 }
